@@ -1,1 +1,1 @@
-console.log("Test");
+(()=>{"use strict";console.log("Test"),async function(){const o=await fetch("https://api.openweathermap.org/data/2.5/weather?q=Toronto&appid=a839eac88ef44503d5c7cd2bba976d76",{mode:"cors"}),a=await o.json();console.log(a),console.log((a.main.temp-273).toFixed(0))}()})();
