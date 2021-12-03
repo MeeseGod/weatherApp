@@ -3,6 +3,7 @@ async function getWeather(){
     const weatherData = await getWeather.json();
     console.log(weatherData);
     console.log((weatherData.main.temp - 273).toFixed(0));
+    console.log("Test");
 }
 
 export default getWeather
