@@ -1,0 +1,34 @@
+#headerDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#searchDiv{
+    display: flex;
+    position: absolute;
+    right: 15px;
+}
+
+#tempTypesDiv{
+    display: flex;
+    position: absolute;
+    right: 15px;
+}
+
+#infoContainerDiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+#mainTempDiv{
+    height: 500px;
+    width: 500px;
+    background-color: green;
+}
+
+#extraInfoDiv{
+    height: 500px;
+    width: 500px;
+    background-color: blue;
+}
