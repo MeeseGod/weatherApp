@@ -1,7 +1,14 @@
+body{
+    background-color: black;
+}
 #headerDiv{
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+#mainHeader{
+    color: white;
 }
 
 #searchDiv{
@@ -22,6 +29,7 @@
 }
 
 #mainTempDiv{
+    display: flex;
     height: 500px;
     width: 500px;
     background-color: green;
@@ -31,4 +39,10 @@
     height: 500px;
     width: 500px;
     background-color: blue;
+}
+
+#tempDisplay{
+    color: white;
+    margin: auto;
+    font-size: 150px;
 }
