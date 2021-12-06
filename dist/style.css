@@ -28,21 +28,35 @@ body{
     justify-content: space-between;
 }
 
-#mainTempDiv{
+#mainInfoDiv{
     display: flex;
     height: 500px;
     width: 500px;
     background-color: green;
+    flex-direction: column;
+    align-items: center;
 }
 
-#extraInfoDiv{
+#cityName{
+    position: absolute;
+    left: 20px;
+}
+#extraInfoContainer{
     height: 500px;
-    width: 500px;
+    width: 600px;
     background-color: blue;
+    left: 10px;
+}
+
+#extraInfoText{
+    position: relative;
+    display: flex;
+    left: 15px;
+    font-size: 25px;
 }
 
 #tempDisplay{
+    display: flex;
     color: white;
-    margin: auto;
     font-size: 150px;
 }
