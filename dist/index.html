@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>Page Title</title>
+<title>City Temps</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 </style>
 <body>
     <div id="headerDiv">
@@ -17,10 +18,6 @@
         </div>
     </div>
     <hr>
-    <div id="tempTypesDiv">
-        <button id="changeCelcius">C</button>
-        <button id="changeFahrenheit">F</button>
-    </div>
     <div id="infoContainerDiv">
         <div id="mainInfoDiv">
             <h2 id="cityName"></h2>
@@ -36,6 +33,10 @@
                 <p id="tempMax"></p>
                 <p id="mainDescription"></p>
             </div>
+        </div>
+        <div id="tempTypesDiv">
+            <button id="changeCelcius" class="tempTypes">C</button>
+            <button id="changeFahrenheit" class="tempTypes">F</button>
         </div>
     </div>
 </body>

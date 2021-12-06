@@ -8,6 +8,7 @@ body{
 }
 
 #mainHeader{
+    font-family: 'Roboto', sans-serif;
     color: white;
 }
 
@@ -32,31 +33,43 @@ body{
     display: flex;
     height: 500px;
     width: 500px;
-    background-color: green;
     flex-direction: column;
     align-items: center;
 }
 
 #cityName{
+    font-family: 'Roboto', sans-serif;
+    color: white;
     position: absolute;
     left: 20px;
 }
+
 #extraInfoContainer{
     height: 500px;
     width: 600px;
-    background-color: blue;
     left: 10px;
 }
 
 #extraInfoText{
+    font-family: 'Roboto', sans-serif;
+    color: white;
     position: relative;
     display: flex;
-    left: 15px;
     font-size: 25px;
+    flex-direction: column;
 }
 
 #tempDisplay{
+    font-family: 'Roboto', sans-serif;
     display: flex;
     color: white;
     font-size: 150px;
+}
+
+.tempTypes{
+    background-color: transparent;
+    color:white;
+    border-style: solid;
+    border-color: white;
+    margin-left: 5px;
 }

@@ -4,6 +4,8 @@ const feelsLike = document.getElementById("feelsLike");
 const mainDescription = document.getElementById("mainDescription");
 const tempMin = document.getElementById("tempMin");
 const tempMax = document.getElementById("tempMax");
+const celcius = document.getElementById("changeCelcius");
+const fahrenheit = document.getElementById("changeFahrenheit");
 let tempSetting = "C";
 
 async function getWeather(city){
@@ -30,13 +32,27 @@ function conversion(temperature, tempSetting){
         return (temperature - 273).toFixed(0)
     }
     else if(tempSetting == "F"){
-        return (temperature - 459.67).toFixed(0);
+        return ((temperature -273.15) * (9/5) + 32).toFixed(0);
     }
 }
 
 document.querySelector('button[type="button"]').addEventListener("click", function(){
     const getCity = document.querySelector("input");
     getWeather(getCity.value);
+})
+
+celcius.addEventListener("click", function(){
+    if(cityName.textContent != "" && cityName.textContent != "Error"){
+        tempSetting = "C";
+        getWeather(cityName.textContent);
+    }
+})
+
+fahrenheit.addEventListener("click", function(){
+    if(cityName.textContent != "" && cityName.textContent != "Error"){
+        tempSetting = "F";
+        getWeather(cityName.textContent);
+    }
 })
 
 export default getWeather
