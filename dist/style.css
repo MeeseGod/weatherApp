@@ -66,10 +66,19 @@ body{
     font-size: 150px;
 }
 
-.tempTypes{
+button{
+    font-family: 'Roboto', sans-serif;
     background-color: transparent;
     color:white;
     border-style: solid;
     border-color: white;
     margin-left: 5px;
+}
+
+input[type=text]{
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+    color:white;
+    border-style: solid;
+    border-color: white;
 }
